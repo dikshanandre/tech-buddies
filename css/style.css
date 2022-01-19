@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 30%; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    
+}
+.nav-list{
+    width :50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-list li{
+    
+  list-style: none;
+  justify-content: center;
+  padding: 26px 10px;
+  
+}
+.nav-list li a {
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   font-family: 'Luxurious Roman', cursive;
+}
+.nav-list li a:hover {
+    
+    color: grey;
+ }
+.rightNav{
+    width : 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size : 17px;
+    border : 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background :rgba(0, 0,0, 0.7) url('../logo/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height:85vh;
+}
+.box-main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+     font-family: 'Luxurious Roman', cursive;
+    max-width: 50%;
+    margin :auto;
+    height : 80%;
+}
+.firstHalf{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+   font-size: 25px;
+}
+.text-small{
+    font-size: 18px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+
+}
+.btn-dark{
+    color: rgb(80, 71, 71);
+    border: 2px  solid black;
+}
+.section{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 70%;
+    margin: auto;
+    font-family: 'Luxurious Roman', cursive;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 65px 65px;
+}
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+.sectionTag{
+     padding: 16px 0;
+}
+.sectionSubTag{
+    font-family: 'Luxurious Roman', cursive;
+}
+.contact{
+    background-color: rgb(238, 228, 215);
+    height: 800px;
+    
+}
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+}
+.form{
+    max-width:700px;
+    margin: 30px auto;
+}
+.form-input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 100%;
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: 'Luxurious Roman', cursive;
+}
+.text-footer{
+    text-align: center;
+    pad: 30px 0 ;
+    font-family: 'Luxurious Roman', cursive;
+    display: flex;
+    justify-content: center;
+    color: aliceblues;
+}
+.burger{
+    display: none;
+    position :absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px ;
+}
+@media only screen and (max-width:764px){
+    .nav-list{
+        flex-direction :column;
+    }
+    .navbar{
+        height: 500px;
+        flex-direction: column;
+        transition: all 0.7s ease-out ;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+    .text-small{
+        text-align: center;
+    }
+}
